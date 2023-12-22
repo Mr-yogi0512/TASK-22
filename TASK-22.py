@@ -7,17 +7,18 @@ driver.maximize_window()
 driver.get("https://www.instagram.com/guviofficial/")
 sleep(5)
 
-following = driver.find_element(By.XPATH, '//ul/li[2]/button/span/span').text
+followers = driver.find_element(By.XPATH, '//ul/li[2]/button/span/span').text
 
-print("Guvi Following: ", following)
+print("Guvi Followers: ", followers)
 
 sleep(5)
 
-followers = driver.find_element(By.XPATH, '//ul/li[3]/button/span/span').text
+following = driver.find_element(By.XPATH, '//ul/li[3]/button/span/span').text
 
-print("Guvi Followers: ", followers)
+print("Guvi Following: ", following)
 
 sleep(2)
 
 driver.quit()
+
 
